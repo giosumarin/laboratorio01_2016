@@ -1,0 +1,21 @@
+function salva {
+	if $(git rev-parse --is-inside-work-tree &> /dev/null); then 
+		git add -A :/ > /dev/null
+		git commit -m ". $1" --quiet > /dev/null
+		git push --quiet
+		echo "*** SALVATAGGIO ESEGUITO ***"		
+	else
+		echo "*** SALVATAGGIO FALLITO: non sei dentro alla directory del progetto ***"
+	fi
+}
+
+function update {
+	if $(git rev-parse --is-inside-work-tree &> /dev/null); then 
+		git pull --quiet prof master
+		echo "*** UPDATE ESEGUITO ***"		
+	else
+		echo "*** UPDATE FALLITO: non sei dentro alla directory del progetto ***"
+	fi
+}
+
+echo "*** INIZIALIZZAZIONE COMANDI AMBIENTE COMPLETATA ***"
