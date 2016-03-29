@@ -59,7 +59,7 @@ public class Lab1Tests {
 		assertEquals("[1.23 2.001 3.75]", l.toString());
 	}
 
-/*	@Test(expected = IllegalArgumentException.class)
+	@Test(expected = IllegalArgumentException.class)
 	public void test3d() {
 		l = new LinkedList("1 2 abb");
 	}
