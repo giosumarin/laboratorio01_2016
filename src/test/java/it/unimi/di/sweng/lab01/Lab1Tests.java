@@ -130,7 +130,7 @@ public class Lab1Tests {
 		assertEquals(2, l.next(), EPSILON);
 		assertEquals(3, l.next(), EPSILON);
 		assertEquals(3, l.next(), EPSILON);
-		//assertEquals(3, l.prev(), EPSILON);
+		//assertEquals(3, l.prev(), EPSILON); siamo sicuri?
 		assertEquals(2, l.prev(), EPSILON);
 		assertEquals(1, l.prev(), EPSILON);
 		assertEquals(1, l.prev(), EPSILON);
