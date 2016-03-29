@@ -24,7 +24,7 @@ public class Lab1Tests {
 		assertEquals("[]", l.toString());
 	}
 
-/*	@Test
+	@Test
 	public void test2() {
 		l = new LinkedList();
 		l.addLast(1);
