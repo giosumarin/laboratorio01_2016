@@ -53,5 +53,10 @@ public class LinkedList {
 		
 	}
 
+	public boolean removeFirst() {
+		
+		return false;
+	}
+
 	
 }
