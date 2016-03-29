@@ -31,7 +31,7 @@ public class Lab1Tests {
 		assertEquals("[1.0]", l.toString());
 	}
 
-/*	@Test
+	@Test
 	public void test2b() {
 		l = new LinkedList();
 		l.addLast(1);

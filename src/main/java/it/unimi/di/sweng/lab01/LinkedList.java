@@ -18,8 +18,8 @@ public class LinkedList {
 		
 		
 	}
-	public void addLast(int i) {
-		Node n=new Node((float)i,head,tail);
+	public void addLast(double d) {
+		Node n=new Node(d,head,tail);
 		head.succ=n;
 		tail.prec=n;
 	}
