@@ -46,5 +46,12 @@ public class LinkedList {
 		tail.prec=n;
 	}
 
+	public void addFirst(double d) {
+		Node n=new Node(d,head,head.succ);
+		(head.succ).prec=n;
+		head.succ=n;
+		
+	}
+
 	
 }

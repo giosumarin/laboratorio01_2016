@@ -64,7 +64,7 @@ public class Lab1Tests {
 		l = new LinkedList("1 2 abb");
 	}
 
-/*	@Test
+	@Test
 	public void test4() {
 		l = new LinkedList("1");
 		l.addFirst(3.75);
