@@ -10,6 +10,14 @@ public class LinkedList {
 		head.succ=tail;	
 	}
 	
+	public LinkedList(String s) {
+		head=new Node(0.0,null,null);
+		tail=new Node(0.0,head,null);
+		head.succ=tail;
+		if(s!="")
+			addLast(Double.parseDouble(s));
+	}
+
 	public String toString(){
 		if (tail.prec==head)
 			return "[]";
