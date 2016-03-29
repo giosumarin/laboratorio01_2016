@@ -4,17 +4,19 @@ import java.util.StringTokenizer;
 public class LinkedList {
 	Node head;
 	Node tail;
-	
+	Node p;
 	public LinkedList(){
 		head=new Node(0.0,null,null);
 		tail=new Node(0.0,head,null);
-		head.succ=tail;	
+		head.succ=tail;
+		p=head;
 	}
 	
 	public LinkedList(String s) {
 		head=new Node(0.0,null,null);
 		tail=new Node(0.0,head,null);
 		head.succ=tail;
+		p=head;
 		if(s!=""){
 			StringTokenizer st=new StringTokenizer(s);
 			while (st.hasMoreElements()) {
@@ -104,5 +106,17 @@ public class LinkedList {
 		}
 	}
 
+	public double next() {
+		if(p.succ!=tail)	
+			p=p.succ;
+		return p.cont;
+	}
+
+	public double prev() {
+		if(p.prec!=head)
+			p=p.prec;
+		return p.cont;
+	}
+	
 	
 }
