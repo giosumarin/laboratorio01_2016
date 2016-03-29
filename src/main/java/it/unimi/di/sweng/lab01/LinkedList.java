@@ -54,8 +54,14 @@ public class LinkedList {
 	}
 
 	public boolean removeFirst() {
-		
-		return false;
+		if (head.succ==tail)
+			return false;
+		else{
+			Node n=head.succ;
+			head.succ=n.succ;
+			(n.succ).prec=head;
+			return true;
+		}
 	}
 
 	
