@@ -88,5 +88,21 @@ public class LinkedList {
 		return false;
 	}
 
+	public double mean() {
+		if (head.succ==tail)
+			return 0;
+		else{
+			double tot=0;
+			int count=0;
+			Node n=head.succ;
+			do{
+				tot+=n.cont;
+				count++;
+				n=n.succ;
+			}while(n!=tail);
+			return tot/count;
+		}
+	}
+
 	
 }

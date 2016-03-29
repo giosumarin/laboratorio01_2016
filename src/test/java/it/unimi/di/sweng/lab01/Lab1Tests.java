@@ -109,7 +109,7 @@ public class Lab1Tests {
 		assertEquals("[3.0 3.0 5.0 4.0]", l.toString());
 	}
 
-/*	@Test
+	@Test
 	public void test8() {
 		l = new LinkedList();
 		assertEquals(0, l.mean(), EPSILON);
