@@ -136,7 +136,7 @@ public class Lab1Tests {
 		assertEquals(1, l.prev(), EPSILON);
 	}
 
-/*	@Test
+	@Test
 	public void test11() {
 		try {
 			FileInputStream f = new FileInputStream("src/test/resources/input.txt");

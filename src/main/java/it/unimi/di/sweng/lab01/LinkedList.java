@@ -1,4 +1,6 @@
 package it.unimi.di.sweng.lab01;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
 public class LinkedList {
@@ -23,6 +25,14 @@ public class LinkedList {
 				String token = st.nextElement().toString();
 				addLast(Double.parseDouble(token));
 			}
+		}
+	}
+
+	public LinkedList(InputStreamReader i) throws IOException {
+		float data = i.read();
+		while(data != ){
+		    char theChar = (char) data;
+		    data = i.read();
 		}
 	}
 
