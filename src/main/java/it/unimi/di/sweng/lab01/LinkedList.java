@@ -75,5 +75,18 @@ public class LinkedList {
 		}
 	}
 
+	public boolean remove(double d) {
+		Node n=head.succ;
+		do{
+			if(n.cont==d){
+				(n.prec).succ=n.succ;
+				(n.succ).prec=n.prec;
+				return true;
+			}
+			n=n.succ;
+		}while(n!=tail);
+		return false;
+	}
+
 	
 }
