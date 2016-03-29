@@ -84,7 +84,7 @@ public class Lab1Tests {
 		assertEquals("[]", l.toString());
 	}
 
-/*	@Test
+	@Test
 	public void test6() {
 		l = new LinkedList("1 2");
 		assertTrue(l.removeLast());

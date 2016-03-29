@@ -64,5 +64,16 @@ public class LinkedList {
 		}
 	}
 
+	public boolean removeLast() {
+		if (tail.prec==head)
+			return false;
+		else{
+			Node n=tail.prec;
+			tail.prec=n.prec;
+			(n.prec).succ=tail;
+			return true;
+		}
+	}
+
 	
 }
