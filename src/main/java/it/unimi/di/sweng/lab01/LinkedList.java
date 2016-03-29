@@ -1,4 +1,5 @@
 package it.unimi.di.sweng.lab01;
+import java.util.StringTokenizer;
 
 public class LinkedList {
 	Node head;
@@ -14,8 +15,13 @@ public class LinkedList {
 		head=new Node(0.0,null,null);
 		tail=new Node(0.0,head,null);
 		head.succ=tail;
-		if(s!="")
-			addLast(Double.parseDouble(s));
+		if(s!=""){
+			StringTokenizer st=new StringTokenizer(s);
+			while (st.hasMoreElements()) {
+				String token = st.nextElement().toString();
+				addLast(Double.parseDouble(token));
+			}
+		}
 	}
 
 	public String toString(){
